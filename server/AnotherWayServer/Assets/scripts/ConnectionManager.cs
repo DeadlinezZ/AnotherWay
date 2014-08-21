@@ -9,6 +9,7 @@ public class ConnectionManager : MonoBehaviour {
 	//DIES IST EIN TEST von Fabrice
 	//TEST
 	//1234
+	//Github ist cool!
 
 	// Use this for initialization
 	void Start () {
