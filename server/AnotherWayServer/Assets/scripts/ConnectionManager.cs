@@ -7,6 +7,7 @@ public class ConnectionManager : MonoBehaviour {
 	GameLobby gameLobby;
 
 	//DIES IST EIN TEST von Fabrice
+	//TEST
 
 	// Use this for initialization
 	void Start () {
