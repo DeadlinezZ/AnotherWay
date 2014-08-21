@@ -6,7 +6,7 @@ public class ConnectionManager : MonoBehaviour {
 	PlayerDatabase playerDB;
 	GameLobby gameLobby;
 
-	//DIES IST EIN TEST
+	//DIES IST EIN TEST von Fabrice
 
 	// Use this for initialization
 	void Start () {
