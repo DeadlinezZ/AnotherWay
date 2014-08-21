@@ -33,7 +33,5 @@ public class ConnectionManager : MonoBehaviour {
 		gameLobby.ClearTeamLists();
 	}
 
-	//Testline
-
 
 }
