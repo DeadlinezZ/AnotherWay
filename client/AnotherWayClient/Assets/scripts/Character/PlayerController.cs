@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour {
 	private Animator animator;
 	public Camera playerCamera;
 	public int speed;
+	private Vector3 lastPos;
+	private float magni;
 	
 	// Use this for initialization
 	void Start ()
@@ -15,15 +17,12 @@ public class PlayerController : MonoBehaviour {
 		animator = GetComponent<Animator>();
 	}
 
-	//TODO
-	//Animator braucht noch speed value
-	//Aufeinmal funtioniert das laufen nicht mehr.
-	//Von Legacy auf Humanoid gewechselt. ?=? sollte aber keinen Einfluss haben.
-	// Update is called once per frame
+	//WICHTIG ANIMATOR DARF KEINE ROOT MOTION EINGESCHALTEN HABEN
 	void FixedUpdate ()
 	{
 		Quaternion qa = new Quaternion(0,playerCamera.transform.rotation.y,0,playerCamera.transform.rotation.w);
-		
+		lastPos = controller.transform.position;
+
 
 		if(Input.GetKey(KeyCode.W)){
 			Vector3 w = playerCamera.transform.TransformDirection(Vector3.forward);
@@ -43,6 +42,10 @@ public class PlayerController : MonoBehaviour {
 			controller.SimpleMove(a * speed);
 			
 		}
+
+		magni = (controller.transform.position - lastPos).magnitude/Time.deltaTime;
+		animator.SetFloat("speed",magni * 100);
+
 		//Rotates the player
 		transform.rotation = qa;
 	}
