@@ -9,12 +9,16 @@ public class PlayerController : MonoBehaviour {
 	public int speed;
 	private Vector3 lastPos;
 	private float magni;
+	private GameObject speer;
+	public Transform hand;
+	public Transform spine;
 	
 	// Use this for initialization
 	void Start ()
 	{
 		controller = GetComponent<CharacterController>();
 		animator = GetComponent<Animator>();
+		speer = GameObject.Find("Speer");
 	}
 
 	//WICHTIG ANIMATOR DARF KEINE ROOT MOTION EINGESCHALTEN HABEN
@@ -22,7 +26,7 @@ public class PlayerController : MonoBehaviour {
 	{
 		Quaternion qa = new Quaternion(0,playerCamera.transform.rotation.y,0,playerCamera.transform.rotation.w);
 		lastPos = controller.transform.position;
-
+		animator.SetBool("attack",false);
 
 		if(Input.GetKey(KeyCode.W)){
 			Vector3 w = playerCamera.transform.TransformDirection(Vector3.forward);
@@ -41,6 +45,12 @@ public class PlayerController : MonoBehaviour {
 			Vector3 a = playerCamera.transform.TransformDirection(Vector3.left);
 			controller.SimpleMove(a * speed);
 			
+		}else if(Input.GetKey(KeyCode.F)){
+			speer.transform.position = hand.position;
+			speer.transform.rotation = hand.rotation;
+			speer.transform.parent = hand;
+		}else if(Input.GetMouseButton(0)){
+			animator.SetBool("attack",true);
 		}
 
 		magni = (controller.transform.position - lastPos).magnitude/Time.deltaTime;

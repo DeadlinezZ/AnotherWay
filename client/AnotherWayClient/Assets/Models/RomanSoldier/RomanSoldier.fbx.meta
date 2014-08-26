@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 067a1983f9c93744c92ec9b89db97d74
+guid: b07ac229651304f4ca9e555c905ae964
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -59,22 +59,22 @@ ModelImporter:
     100106: Rigg|shin.R
     100108: Rigg|shoulder.L
     100110: Rigg|shoulder.R
-    100112: Rigg|Speer_Bone
-    100114: Rigg|spine
-    100116: Rigg|Sword_bone
-    100118: Rigg|Sword_shaft
-    100120: Rigg|thigh.L
-    100122: Rigg|thigh.R
-    100124: Rigg|thumb.01.L
-    100126: Rigg|thumb.01.R
-    100128: Rigg|thumb.02.L
-    100130: Rigg|thumb.02.R
-    100132: Rigg|thumb.03.L
-    100134: Rigg|thumb.03.R
-    100136: Rigg|toe.L
-    100138: Rigg|toe.R
-    100140: Rigg|upper_arm.L
-    100142: Rigg|upper_arm.R
+    100112: Rigg|spine
+    100114: Rigg|Sword_bone
+    100116: Rigg|Sword_shaft
+    100118: Rigg|thigh.L
+    100120: Rigg|thigh.R
+    100122: Rigg|thumb.01.L
+    100124: Rigg|thumb.01.R
+    100126: Rigg|thumb.02.L
+    100128: Rigg|thumb.02.R
+    100130: Rigg|thumb.03.L
+    100132: Rigg|thumb.03.R
+    100134: Rigg|toe.L
+    100136: Rigg|toe.R
+    100138: Rigg|upper_arm.L
+    100140: Rigg|upper_arm.R
+    100142: Rigg|Weapon_Bone
     100144: //RootNode
     100146: Sandals
     100148: Shield
@@ -139,22 +139,22 @@ ModelImporter:
     400106: Rigg|shin.R
     400108: Rigg|shoulder.L
     400110: Rigg|shoulder.R
-    400112: Rigg|Speer_Bone
-    400114: Rigg|spine
-    400116: Rigg|Sword_bone
-    400118: Rigg|Sword_shaft
-    400120: Rigg|thigh.L
-    400122: Rigg|thigh.R
-    400124: Rigg|thumb.01.L
-    400126: Rigg|thumb.01.R
-    400128: Rigg|thumb.02.L
-    400130: Rigg|thumb.02.R
-    400132: Rigg|thumb.03.L
-    400134: Rigg|thumb.03.R
-    400136: Rigg|toe.L
-    400138: Rigg|toe.R
-    400140: Rigg|upper_arm.L
-    400142: Rigg|upper_arm.R
+    400112: Rigg|spine
+    400114: Rigg|Sword_bone
+    400116: Rigg|Sword_shaft
+    400118: Rigg|thigh.L
+    400120: Rigg|thigh.R
+    400122: Rigg|thumb.01.L
+    400124: Rigg|thumb.01.R
+    400126: Rigg|thumb.02.L
+    400128: Rigg|thumb.02.R
+    400130: Rigg|thumb.03.L
+    400132: Rigg|thumb.03.R
+    400134: Rigg|toe.L
+    400136: Rigg|toe.R
+    400138: Rigg|upper_arm.L
+    400140: Rigg|upper_arm.R
+    400142: Rigg|Weapon_Bone
     400144: //RootNode
     400146: Sandals
     400148: Shield
@@ -178,13 +178,15 @@ ModelImporter:
     4300024: Skin
     7400000: Rigg|Arrow_Def
     7400002: Rigg|Idle
-    7400004: Rigg|Run
+    7400004: Rigg|Jump_Back
     7400006: Rigg|Salute
     7400008: Rigg|Speer_Attack
     7400010: Rigg|Speer_Throw
-    7400012: Rigg|Sword_Draw
-    7400014: Rigg|Walk
-    7400016: Rigg|Walk_Shield
+    7400012: Rigg|Sword_Attack_1
+    7400014: Rigg|Sword_Attack_2
+    7400016: Rigg|Sword_Draw
+    7400018: Rigg|Walk
+    7400020: Rigg|Walk_Shield
     9500000: //RootNode
     13700000: Arm_protection
     13700002: Breast
@@ -363,7 +365,7 @@ ModelImporter:
         weight: 1
       - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.04.R/Rigg|f_pinky.01.R/Rigg|f_pinky.02.R/Rigg|f_pinky.03.R
         weight: 1
-      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Speer_Bone
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Weapon_Bone
         weight: 1
       - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|Sword_shaft
         weight: 1
@@ -549,7 +551,7 @@ ModelImporter:
         weight: 1
       - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.04.R/Rigg|f_pinky.01.R/Rigg|f_pinky.02.R/Rigg|f_pinky.03.R
         weight: 1
-      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Speer_Bone
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Weapon_Bone
         weight: 1
       - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|Sword_shaft
         weight: 1
@@ -588,10 +590,10 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: Rigg|Run
-      takeName: Rigg|Run
+      name: Rigg|Jump_Back
+      takeName: Rigg|Jump_Back
       firstFrame: 0
-      lastFrame: 17
+      lastFrame: 18
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -735,7 +737,7 @@ ModelImporter:
         weight: 1
       - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.04.R/Rigg|f_pinky.01.R/Rigg|f_pinky.02.R/Rigg|f_pinky.03.R
         weight: 1
-      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Speer_Bone
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Weapon_Bone
         weight: 1
       - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|Sword_shaft
         weight: 1
@@ -921,7 +923,7 @@ ModelImporter:
         weight: 1
       - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.04.R/Rigg|f_pinky.01.R/Rigg|f_pinky.02.R/Rigg|f_pinky.03.R
         weight: 1
-      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Speer_Bone
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Weapon_Bone
         weight: 1
       - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|Sword_shaft
         weight: 1
@@ -1107,7 +1109,7 @@ ModelImporter:
         weight: 1
       - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.04.R/Rigg|f_pinky.01.R/Rigg|f_pinky.02.R/Rigg|f_pinky.03.R
         weight: 1
-      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Speer_Bone
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Weapon_Bone
         weight: 1
       - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|Sword_shaft
         weight: 1
@@ -1293,7 +1295,379 @@ ModelImporter:
         weight: 1
       - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.04.R/Rigg|f_pinky.01.R/Rigg|f_pinky.02.R/Rigg|f_pinky.03.R
         weight: 1
-      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Speer_Bone
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Weapon_Bone
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|Sword_shaft
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|Sword_shaft/Rigg|Sword_bone
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|thigh.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|thigh.L/Rigg|shin.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|thigh.L/Rigg|shin.L/Rigg|foot.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|thigh.L/Rigg|shin.L/Rigg|foot.L/Rigg|toe.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|thigh.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|thigh.R/Rigg|shin.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|thigh.R/Rigg|shin.R/Rigg|foot.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|thigh.R/Rigg|shin.R/Rigg|foot.R/Rigg|toe.R
+        weight: 1
+      - path: Sandals
+        weight: 1
+      - path: Shield
+        weight: 1
+      - path: Shoulder
+        weight: 1
+      - path: Skin
+        weight: 1
+      - path: Skirt
+        weight: 1
+      - path: Torso
+        weight: 1
+      - path: Tunika
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rigg|Sword_Attack_1
+      takeName: Rigg|Sword_Attack_1
+      firstFrame: 0
+      lastFrame: 11
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Arm_protection
+        weight: 1
+      - path: Breast
+        weight: 1
+      - path: Gladius
+        weight: 1
+      - path: GladiusSave
+        weight: 1
+      - path: Helm
+        weight: 1
+      - path: Leg_protection
+        weight: 1
+      - path: Rigg
+        weight: 1
+      - path: Rigg/Rigg|Root
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|neck
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|neck/Rigg|head
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.01.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.01.L/Rigg|f_index.01.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.01.L/Rigg|f_index.01.L/Rigg|f_index.02.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.01.L/Rigg|f_index.01.L/Rigg|f_index.02.L/Rigg|f_index.03.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.01.L/Rigg|thumb.01.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.01.L/Rigg|thumb.01.L/Rigg|thumb.02.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.01.L/Rigg|thumb.01.L/Rigg|thumb.02.L/Rigg|thumb.03.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.02.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.02.L/Rigg|f_middle.01.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.02.L/Rigg|f_middle.01.L/Rigg|f_middle.02.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.02.L/Rigg|f_middle.01.L/Rigg|f_middle.02.L/Rigg|f_middle.03.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.03.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.03.L/Rigg|f_ring.01.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.03.L/Rigg|f_ring.01.L/Rigg|f_ring.02.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.03.L/Rigg|f_ring.01.L/Rigg|f_ring.02.L/Rigg|f_ring.03.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.04.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.04.L/Rigg|f_pinky.01.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.04.L/Rigg|f_pinky.01.L/Rigg|f_pinky.02.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.04.L/Rigg|f_pinky.01.L/Rigg|f_pinky.02.L/Rigg|f_pinky.03.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|Schield_Bone
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.01.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.01.R/Rigg|f_index.01.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.01.R/Rigg|f_index.01.R/Rigg|f_index.02.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.01.R/Rigg|f_index.01.R/Rigg|f_index.02.R/Rigg|f_index.03.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.01.R/Rigg|thumb.01.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.01.R/Rigg|thumb.01.R/Rigg|thumb.02.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.01.R/Rigg|thumb.01.R/Rigg|thumb.02.R/Rigg|thumb.03.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.02.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.02.R/Rigg|f_middle.01.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.02.R/Rigg|f_middle.01.R/Rigg|f_middle.02.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.02.R/Rigg|f_middle.01.R/Rigg|f_middle.02.R/Rigg|f_middle.03.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.03.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.03.R/Rigg|f_ring.01.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.03.R/Rigg|f_ring.01.R/Rigg|f_ring.02.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.03.R/Rigg|f_ring.01.R/Rigg|f_ring.02.R/Rigg|f_ring.03.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.04.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.04.R/Rigg|f_pinky.01.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.04.R/Rigg|f_pinky.01.R/Rigg|f_pinky.02.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.04.R/Rigg|f_pinky.01.R/Rigg|f_pinky.02.R/Rigg|f_pinky.03.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Weapon_Bone
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|Sword_shaft
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|Sword_shaft/Rigg|Sword_bone
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|thigh.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|thigh.L/Rigg|shin.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|thigh.L/Rigg|shin.L/Rigg|foot.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|thigh.L/Rigg|shin.L/Rigg|foot.L/Rigg|toe.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|thigh.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|thigh.R/Rigg|shin.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|thigh.R/Rigg|shin.R/Rigg|foot.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|thigh.R/Rigg|shin.R/Rigg|foot.R/Rigg|toe.R
+        weight: 1
+      - path: Sandals
+        weight: 1
+      - path: Shield
+        weight: 1
+      - path: Shoulder
+        weight: 1
+      - path: Skin
+        weight: 1
+      - path: Skirt
+        weight: 1
+      - path: Torso
+        weight: 1
+      - path: Tunika
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rigg|Sword_Attack_2
+      takeName: Rigg|Sword_Attack_2
+      firstFrame: 0
+      lastFrame: 17
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Arm_protection
+        weight: 1
+      - path: Breast
+        weight: 1
+      - path: Gladius
+        weight: 1
+      - path: GladiusSave
+        weight: 1
+      - path: Helm
+        weight: 1
+      - path: Leg_protection
+        weight: 1
+      - path: Rigg
+        weight: 1
+      - path: Rigg/Rigg|Root
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|neck
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|neck/Rigg|head
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.01.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.01.L/Rigg|f_index.01.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.01.L/Rigg|f_index.01.L/Rigg|f_index.02.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.01.L/Rigg|f_index.01.L/Rigg|f_index.02.L/Rigg|f_index.03.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.01.L/Rigg|thumb.01.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.01.L/Rigg|thumb.01.L/Rigg|thumb.02.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.01.L/Rigg|thumb.01.L/Rigg|thumb.02.L/Rigg|thumb.03.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.02.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.02.L/Rigg|f_middle.01.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.02.L/Rigg|f_middle.01.L/Rigg|f_middle.02.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.02.L/Rigg|f_middle.01.L/Rigg|f_middle.02.L/Rigg|f_middle.03.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.03.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.03.L/Rigg|f_ring.01.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.03.L/Rigg|f_ring.01.L/Rigg|f_ring.02.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.03.L/Rigg|f_ring.01.L/Rigg|f_ring.02.L/Rigg|f_ring.03.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.04.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.04.L/Rigg|f_pinky.01.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.04.L/Rigg|f_pinky.01.L/Rigg|f_pinky.02.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|hand.L/Rigg|palm.04.L/Rigg|f_pinky.01.L/Rigg|f_pinky.02.L/Rigg|f_pinky.03.L
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.L/Rigg|upper_arm.L/Rigg|forearm.L/Rigg|Schield_Bone
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.01.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.01.R/Rigg|f_index.01.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.01.R/Rigg|f_index.01.R/Rigg|f_index.02.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.01.R/Rigg|f_index.01.R/Rigg|f_index.02.R/Rigg|f_index.03.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.01.R/Rigg|thumb.01.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.01.R/Rigg|thumb.01.R/Rigg|thumb.02.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.01.R/Rigg|thumb.01.R/Rigg|thumb.02.R/Rigg|thumb.03.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.02.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.02.R/Rigg|f_middle.01.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.02.R/Rigg|f_middle.01.R/Rigg|f_middle.02.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.02.R/Rigg|f_middle.01.R/Rigg|f_middle.02.R/Rigg|f_middle.03.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.03.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.03.R/Rigg|f_ring.01.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.03.R/Rigg|f_ring.01.R/Rigg|f_ring.02.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.03.R/Rigg|f_ring.01.R/Rigg|f_ring.02.R/Rigg|f_ring.03.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.04.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.04.R/Rigg|f_pinky.01.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.04.R/Rigg|f_pinky.01.R/Rigg|f_pinky.02.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.04.R/Rigg|f_pinky.01.R/Rigg|f_pinky.02.R/Rigg|f_pinky.03.R
+        weight: 1
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Weapon_Bone
         weight: 1
       - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|Sword_shaft
         weight: 1
@@ -1479,7 +1853,7 @@ ModelImporter:
         weight: 1
       - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.04.R/Rigg|f_pinky.01.R/Rigg|f_pinky.02.R/Rigg|f_pinky.03.R
         weight: 1
-      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Speer_Bone
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Weapon_Bone
         weight: 1
       - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|Sword_shaft
         weight: 1
@@ -1665,7 +2039,7 @@ ModelImporter:
         weight: 1
       - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.04.R/Rigg|f_pinky.01.R/Rigg|f_pinky.02.R/Rigg|f_pinky.03.R
         weight: 1
-      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Speer_Bone
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Weapon_Bone
         weight: 1
       - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|Sword_shaft
         weight: 1
@@ -1851,7 +2225,7 @@ ModelImporter:
         weight: 1
       - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|hand.R/Rigg|palm.04.R/Rigg|f_pinky.01.R/Rigg|f_pinky.02.R/Rigg|f_pinky.03.R
         weight: 1
-      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Speer_Bone
+      - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|spine/Rigg|chest/Rigg|shoulder.R/Rigg|upper_arm.R/Rigg|forearm.R/Rigg|Weapon_Bone
         weight: 1
       - path: Rigg/Rigg|Root/Rigg|hips_IK/Rigg|hips/Rigg|Sword_shaft
         weight: 1
