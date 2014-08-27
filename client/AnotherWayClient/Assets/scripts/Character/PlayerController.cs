@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour {
 		animator.SetBool("attack",false);
 		animator.SetBool("def",false);
 		animator.SetBool("draw",false);
+		animator.SetBool("back",false);
 
 		if(Input.GetKey(KeyCode.W)){
 			if(Input.GetMouseButton(0)){
@@ -38,8 +39,6 @@ public class PlayerController : MonoBehaviour {
 
 			Vector3 w = playerCamera.transform.TransformDirection(Vector3.forward);
 			controller.SimpleMove(w * speed);
-			animator.SetBool("back",false);
-			
 		}else if(Input.GetKey(KeyCode.S)) {
 			Vector3 s = playerCamera.transform.TransformDirection(Vector3.back);
 			controller.SimpleMove(s * speed);
