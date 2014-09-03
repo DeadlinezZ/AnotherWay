@@ -4,6 +4,6 @@ $unityhash = $_POST['hash'];
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-echo($unityhash . " " . $username . " " . $password);
+echo htmlspecialchars($unityhash . " " . $username . " " . $password);
 
 ?>
