@@ -10,4 +10,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scenes/main.unity
   - enabled: 1
-    path: Assets/scenes/maps/test.unity
+    path: Assets/scenes/maps/test1.unity
+  - enabled: 1
+    path: Assets/scenes/maps/test2.unity
+  - enabled: 1
+    path: Assets/scenes/maps/test3.unity

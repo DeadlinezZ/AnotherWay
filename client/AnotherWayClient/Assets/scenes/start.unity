@@ -893,9 +893,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapList:
-  - MapName: Testmap
-    MapLoadName: test
-    MapLoadText: dsdadasd
+  - MapName: Testmap1
+    MapLoadName: test1
+    MapLoadText: Loading Testmap1..
+    MapPreviewTexture: {fileID: 0}
+    MapLoadTexture: {fileID: 0}
+  - MapName: Testmap2
+    MapLoadName: test2
+    MapLoadText: Loading Testmap2..
+    MapPreviewTexture: {fileID: 0}
+    MapLoadTexture: {fileID: 0}
+  - MapName: Testmap3
+    MapLoadName: test3
+    MapLoadText: Loading Testmap3..
     MapPreviewTexture: {fileID: 0}
     MapLoadTexture: {fileID: 0}
   curMap:

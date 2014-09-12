@@ -7,14 +7,8 @@ public class ConnectionManager : MonoBehaviour {
 	GameLobby gameLobby;
 	LevelManager levelManager;
 
-	//DIES IST EIN TEST von Fabrice
-	//TEST
-	//1234
-	//Github ist cool!
-
 	// Use this for initialization
 	void Start () {
-		Debug.Log ("networkViedID: " + networkView.viewID);
 		playerDB = GameObject.Find ("PlayerDatabase").GetComponent<PlayerDatabase>();
 		gameLobby = GameObject.Find ("GUI").GetComponent<GameLobby>();
 		levelManager = GameObject.Find ("LevelManager").GetComponent<LevelManager>();

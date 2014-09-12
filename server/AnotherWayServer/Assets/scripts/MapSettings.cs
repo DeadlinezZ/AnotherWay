@@ -19,7 +19,7 @@ public class MapSettings
 	public string MapLoadText;
 	
 	//This texture is used to show a little texture in the map selection menu or game lobby
-	public Texture MapPreviewTexture;
+	public Texture2D MapPreviewTexture;
 	
 	//Holds the texture drawed on the loading screen
 	public Texture MapLoadTexture;

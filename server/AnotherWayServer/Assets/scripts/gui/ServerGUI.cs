@@ -7,6 +7,7 @@ public class ServerGUI : MonoBehaviour {
 		general,
 		gamemode,
 		players,
+		map,
 		start,
 		overview,
 		admin,
@@ -14,6 +15,9 @@ public class ServerGUI : MonoBehaviour {
 	}
 
 	public Menu menu;
+
+
+	private LevelManager levelManager;
 
 	private int windowWidth;
 	private int windowHeight;
@@ -45,9 +49,18 @@ public class ServerGUI : MonoBehaviour {
 	public GUIStyle labelTextBlack;
 	private GUIStyle guiElementStyle;
 	private GUIStyle dropDownStyle;
+	public GUIStyle mapLabel;
+	public GUIStyle mapTextures;
+
 	private Core core;
 
 	private bool serverStarted = false;
+
+	//Map Selection
+	public int mapsPerRow = 3;
+	public int mapWidth = 120;
+	public int mapHeight = 60;
+	public int mapLeftIndent = 30;
 
 	//Gamemode Selection dropdown
 	private Vector2 scrollViewVector = Vector2.zero;
@@ -88,6 +101,7 @@ public class ServerGUI : MonoBehaviour {
 		textfieldIntWidth = 60f;
 
 		core = GameObject.Find ("Core").GetComponent<Core>();
+		levelManager = GameObject.Find ("LevelManager").GetComponent<LevelManager>();
 
 		//Button Style
 		buttonText = new GUIStyle();
@@ -138,6 +152,9 @@ public class ServerGUI : MonoBehaviour {
 		dropDownStyle.hover.background = lobbyBar;
 
 
+		//Calculate Maps per row
+		mapsPerRow = (int)((settingsWidth - mapLeftIndent)/ mapWidth);
+		
 	}
 	
 
@@ -161,7 +178,10 @@ public class ServerGUI : MonoBehaviour {
 			if(GUI.Button(new Rect(0, menuHeight / 3 + buttonHeight * 2 + 2 * 10, buttonWidth, buttonHeight), "Players", buttonText)){
 				menu = Menu.players;
 			}
-			if(GUI.Button(new Rect(0, menuHeight / 3 + buttonHeight * 3 + 3 * 10, buttonWidth, buttonHeight), "Start", buttonText)){
+			if(GUI.Button(new Rect(0, menuHeight / 3 + buttonHeight * 3 + 3 * 10, buttonWidth, buttonHeight), "Map", buttonText)){
+				menu = Menu.map;
+			}
+			if(GUI.Button(new Rect(0, menuHeight / 3 + buttonHeight * 4 + 4 * 10, buttonWidth, buttonHeight), "Start", buttonText)){
 				menu = Menu.start;
 			}
 			if(GUI.Button(new Rect(0, menuHeight -buttonHeight, buttonWidth, buttonHeight), "Exit", buttonText)){
@@ -256,24 +276,60 @@ public class ServerGUI : MonoBehaviour {
 			int.TryParse(GUI.TextField(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 225, textfieldIntWidth, 20), core.maxPlayers.ToString(), guiElementStyle), out core.maxPlayers);
 		}
 
+		else if(menu == Menu.map){
+			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth / 2, settingsTopIndent + 100, labelWidth, labelHeight), "Select Map", headerText);
+
+			int counter = 0;
+			int row = 0;
+			// Map Icons
+			for(int i = 0; i < levelManager.mapList.Count; i++){
+				if(counter >= mapsPerRow){
+					counter = 0;
+					row++;
+				}
+				Color color = mapLabel.normal.textColor;
+				if(levelManager.curMap.MapName == levelManager.mapList[i].MapName){
+					mapLabel.normal.textColor = Color.red;
+				}
+				GUI.Label(new Rect(settingsLeftIndent + mapLeftIndent + counter * mapWidth + counter * 10, settingsTopIndent + 180 + row * mapHeight + row * 30, mapWidth, 20), levelManager.mapList[i].MapName, mapLabel);
+				mapLabel.normal.textColor = color;
+
+				mapTextures.normal.background = levelManager.mapList[i].MapPreviewTexture;
+				mapTextures.active.background = levelManager.mapList[i].MapPreviewTexture;
+
+
+				if(GUI.Button(new Rect(settingsLeftIndent + mapLeftIndent + counter * mapWidth + counter * 10, settingsTopIndent + 200 + row * mapHeight + row * 30, mapWidth, mapHeight), "", mapTextures)){
+					levelManager.mapIndex = i;
+					levelManager.curMap = levelManager.mapList[i];
+				}
+
+				counter++;
+
+			}
+		}
+
 		else if(menu == Menu.start){
 			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth / 2, settingsTopIndent + 100, labelWidth, labelHeight), "Start Server", headerText);
 
 			//Servername
-			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 200, 200, 20), "Servername", labelText);
-			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 215, 200, 20), core.serverName);
+			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 155, 200, 20), "Servername", labelText);
+			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 180, 200, 20), core.serverName);
 
 			//Port
-			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 245, 200, 20), "Port", labelText);
-			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 260, 200, 20), core.port.ToString());
+			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 200, 200, 20), "Port", labelText);
+			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 215, 200, 20), core.port.ToString());
 
 			//Gamemode
-			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 290, 200, 20), "Gamemode", labelText);
-			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 305, 200, 20), core.gamemode.ToString());
+			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 245, 200, 20), "Gamemode", labelText);
+			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 260, 200, 20), core.gamemode.ToString());
 
 			//Max Allowed Player On Server
-			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 335, 200, 20), "Max. Allowed Player On Server", labelText);
-			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 350, 200, 20), core.maxPlayers.ToString());
+			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 290, 200, 20), "Max. Allowed Player On Server", labelText);
+			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 305, 200, 20), core.maxPlayers.ToString());
+
+			//Max Allowed Player On Server
+			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 335, 200, 20), "Map", labelText);
+			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 350, 200, 20), levelManager.curMap.MapName);
 
 			//servername
 			GUI.Label(new Rect(settingsLeftIndent + settingsWidth - settingsWidth / 2 - labelWidth, settingsTopIndent + 380, 200, 20), "Server visibility", labelText);
