@@ -8,6 +8,7 @@ public class ConnectionManager : MonoBehaviour {
 
 	PlayerDatabase playerDB;
 	GameLobby gameLobby;
+	
 
 	// Use this for initialization
 	void Start () {

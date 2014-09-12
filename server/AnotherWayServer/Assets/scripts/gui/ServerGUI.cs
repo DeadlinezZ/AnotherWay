@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ServerGUI : MonoBehaviour {
 
-	private enum Menu {
+	public enum Menu {
 		general,
 		gamemode,
 		players,
@@ -13,7 +13,7 @@ public class ServerGUI : MonoBehaviour {
 		console
 	}
 
-	private Menu menu;
+	public Menu menu;
 
 	private int windowWidth;
 	private int windowHeight;

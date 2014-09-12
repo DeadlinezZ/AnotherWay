@@ -5,6 +5,7 @@ public class ConnectionManager : MonoBehaviour {
 
 	PlayerDatabase playerDB;
 	GameLobby gameLobby;
+	LevelManager levelManager;
 
 	//DIES IST EIN TEST von Fabrice
 	//TEST
@@ -16,10 +17,12 @@ public class ConnectionManager : MonoBehaviour {
 		Debug.Log ("networkViedID: " + networkView.viewID);
 		playerDB = GameObject.Find ("PlayerDatabase").GetComponent<PlayerDatabase>();
 		gameLobby = GameObject.Find ("GUI").GetComponent<GameLobby>();
+		levelManager = GameObject.Find ("LevelManager").GetComponent<LevelManager>();
 	}
 
 	void OnPlayerConnected(NetworkPlayer network){
 		//Debug.Log ("Player connected from IP " + network.ipAddress);
+		levelManager.networkView.RPC("Client_LoadMap", network, levelManager.mapIndex, levelManager.lastLevelPrefix + 1);
 	}
 
 	void OnPlayerDisconnected(NetworkPlayer network){

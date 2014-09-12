@@ -14,15 +14,14 @@ public class GameLobby : MonoBehaviour {
 	public List<Player> team1 = new List<Player>();
 	public List<Player> team2 = new List<Player>();
 
-	// Use this for initialization
-	void Start () {
-		menu = gameObject.GetComponent<Menu>();
+	void Awake(){
+		networkView.group = 1;
 	}
-	
+
 	void OnEnable(){
 		networkView.RPC("Server_RequestMaxPlayers", RPCMode.Server, Network.player);
 		networkView.RPC ("Server_RequestTeamJoin", RPCMode.Server, Network.player);
-
+		menu = gameObject.GetComponent<Menu>();
 	}
 
 	void Update(){
