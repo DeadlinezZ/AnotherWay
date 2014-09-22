@@ -648,8 +648,8 @@ MonoBehaviour:
     m_StretchWidth: 1
     m_StretchHeight: 0
   mapsPerRow: 3
-  mapWidth: 110
-  mapHeight: 60
+  mapWidth: 200
+  mapHeight: 100
   mapLeftIndent: 30
   gamemodeSelectionList:
   - Normal

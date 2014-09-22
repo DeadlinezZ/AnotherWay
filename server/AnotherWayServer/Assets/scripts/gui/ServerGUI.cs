@@ -57,7 +57,7 @@ public class ServerGUI : MonoBehaviour {
 	private bool serverStarted = false;
 
 	//Map Selection
-	public int mapsPerRow = 3;
+	private int mapsPerRow = 3;
 	public int mapWidth = 120;
 	public int mapHeight = 60;
 	public int mapLeftIndent = 30;
@@ -154,7 +154,7 @@ public class ServerGUI : MonoBehaviour {
 
 		//Calculate Maps per row
 		mapsPerRow = (int)((settingsWidth - mapLeftIndent)/ mapWidth);
-		
+
 	}
 	
 
